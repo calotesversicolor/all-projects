@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #141C2F;
+    font-family: "Space Mono", monospace;
+    color: #fff;
+}
+
+h4, h1 {
+    font: inherit;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    
+}
+
+input {
+    min-width: 255px;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+.container { 
+    margin: 0 auto;
+    padding: 0;
+    max-width: 730px;
+}
+
+/*  */
+
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+ }
+
+ .theme__icon {
+    width: 20px;
+    height: 20px;
+    fill: #90A4D4;
+}
+
+.theme__icon:hover, .theme__icon:focus {
+    fill: #FFF;
+}
+
+.theme {
+    color: #90A4D4;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.theme:hover, .theme:focus {
+    color: #fff;
+}
+
+ /*  */
+
+.container-search__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    background: #1F2A48;
+    padding: 20px;
+    margin: 24px 0;
+}
+
+
+.search__icon {
+    background: url(/icons/Search\ icon.svg);
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.search__start {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.search__btn {
+    background-color: #0079FE;
+    color: #fff;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.search__btn:hover, .search__btn:focus {
+    background-color: #60ABFF    
+}
+
+
+
+
+/*  */
+
+.container-user__info {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background: #1F2A48;    
+    justify-content: space-between;
+    padding: 50px;
+    align-items: flex-start;
+}
+
+.flex__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.user__info__card {
+    width: 470px;
+}
+
+
+
+.username {
+    font-size: 26px;
+    font-weight: 700px;
+    margin-bottom: 0;
+
+}
+
+.user__tag {
+    color: #0079FE;
+}
+
+.user__bio {
+    color: #B2B6C1;
+}
+
+/*  */
+
+.user__stat {
+    background: #141C2F;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 20px 32px;
+    margin: 38px 0;
+}
+
+.user__stat__title {
+    font-size: 13px;
+    font-style: 400;
+    margin: 0;
+}
+
+.info__stat {
+    font-size: 22px;
+    font-style: 700;
+    margin: 0;
+}
+
+
+/*  */
+.social__media {
+    color: #fff;
+    justify-content: end;
+}
+
+.social__media_unactive {
+    color: #8E94A4;
+}
+
+.sm__logo {
+    fill: #fff;
+    width: 20px;
+}
+
+.sm__logo_na {
+    fill: #8E94A4; 
+}
+
+.sm__logo_pin {
+    width: 14px;
+}
+
+.container-social__media {
+    display: flex;
+    
+    
+}
+
+.social__media_column {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social__media,
+.social__media_unactive {
+    margin-right: 30px;
+    gap: 12px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 375px) {
+
+
+    input {
+        min-width: 188px;
+    }
+
+    body {
+        font-size: 13px;
+    }
+
+    .container {
+        max-width: 343px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .container-search__bar {
+        padding: 8px 12px;
+        margin: 32px 0;
+    }
+
+    .search__start {
+        gap: 12px;
+    }
+
+    .search__btn {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .container-user__info {
+        padding: 20px;
+
+    }
+
+    .user__info__card {
+        align-items: center;
+    }
+
+    .user__pic {
+        width: 70px;
+        height: 70px;
+    }
+
+    .flex__card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user__stat {
+        width: 295px;
+        flex-direction: column;
+        padding: 12px 12px;
+    }
+
+    .flex__user__stat {
+        margin-bottom: 30px;
+    }
+
+    .container-social__media {
+        flex-direction: column;
+    }
+
+    .social__media,
+    .social__media_unactive {
+        margin-bottom: 10px;
+    }
+
+    
+}
+
